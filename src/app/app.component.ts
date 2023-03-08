@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FomService } from './fom.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'swarg_residency';
+
+  constructor(private form: FomService){ }
+
+  onJourneySelected(endPoint: string){
+    this.form.onJourney(endPoint);
+  }
 }

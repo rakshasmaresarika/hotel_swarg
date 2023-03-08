@@ -1,3 +1,4 @@
+ <ng-container *ngIf="hide">  
 <div class="container bg-light" style="width: 450px;">
     <h1 class="text-center"> Create Account</h1>
     <form  [formGroup]="reactiveForm" (ngSubmit)="onSubmit()">
@@ -5,8 +6,9 @@
       <!-- <input type="text" id="lname" name="lastname" placeholder="Your last name.."> -->
       <input type="text" id="email" formControlName="email" placeholder="Your Email Address.." >
       <input type="text" id="Mobile"  pattern="[0-9]{10}" formControlName="mobile" placeholder="Your Mobile No...">
-      <input type="text" id="password" formControlName="password" placeholder="Create password...">
-       <input type="text" id="password" formControlName="password" placeholder="Confirm password..."> 
+      <input type="text" id="uname" formControlName="uname" placeholder="Create username.." >
+      <input type="password" class="ms-1 me-3 p-1" id="password" formControlName="password" placeholder="Create password..." >
+       <input type="password" class="p-1" id="password" formControlName="cpassword" placeholder="Confirm password..."> 
       <div>
         <b><label for="gender">Gender : </label></b>
         <label class="ms-3 me-2" for="gender">Male</label>
@@ -14,12 +16,24 @@
         <label class="me-2" for="gender">Female</label>
         <input class="me-5 form-check-input" formControlName="gender" type="radio" value="female">
       </div>
-    <input class="w-100 mt-0" type="submit" value="Submit">
+    <input (click)="onAddUser()" [disabled]="reactiveForm.invalid"  class="w-100 mt-0" type="submit" value="Submit">
     </form>
+    <!-- Already have account -->
     <div  class="text-center mt-0" >
       <span  routerLink="/user">Already have account?</span>
     </div>
   </div> 
+</ng-container> 
+   <!-- conformation notification -->
+<ng-container *ngIf="!hide && hidenoti">
+    <div class="position-absolute top-25 start-50 translate-middle mt-5">
+        <div class="alert alert-success text-center" role="alert">
+            New user created successfully <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" 
+            (click)="notificationoff()">
+            </button>
+        </div>
+    </div>
+</ng-container> 
 
   <!-- <div class="container " style="width: 440px;">
     <form>

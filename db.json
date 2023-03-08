@@ -1,0 +1,113 @@
+{
+  "users": [
+    {
+      "fullname": "ARCHANA VIJAY INGOLE",
+      "email": "sarikarakshasmare123@gmail.com",
+      "mobile": "9834526087",
+      "password": "archana@123",
+      "uname": "archana@123",
+      "gender": "female",
+      "id": 1
+    },
+    {
+      "fullname": "SONI SACHIN KHILLARE",
+      "email": "Yogeshmalpani01@gmail.com",
+      "mobile": "9422169514",
+      "password": "soni@123",
+      "uname": "soni@123",
+      "gender": "female",
+      "id": 2
+    },
+    {
+      "fullname": "RAKSHASMARE SARIKA DADARAO",
+      "email": "sarikarakshasmare123@gmail.com",
+      "mobile": "9370472789",
+      "password": "sarika@123",
+      "uname": "sarika@123",
+      "gender": "female",
+      "id": 3
+    },
+    {
+      "fullname": "RAKSHASMARE SARIKA DADARAO",
+      "email": "sarikarakshasmare123@gmail.com",
+      "mobile": "9370472789",
+      "password": "sarika@123",
+      "cpassword": "sarika@123",
+      "uname": "sarika@123",
+      "gender": "female",
+      "id": 4
+    },
+    {
+      "fullname": "jyoti dadarao rakshasmare",
+      "email": "jyotti@123.com",
+      "mobile": "8055813131",
+      "password": "jyoti123",
+      "cpassword": "jyoti123",
+      "uname": "soni@123",
+      "gender": "female",
+      "id": 5
+    },
+    {
+      "fullname": "DADARAO SADASHIV RAKSHASMARE",
+      "email": "wdadarao@gmail.com",
+      "mobile": "8878787897",
+      "password": "dada12345",
+      "cpassword": "dada12345",
+      "uname": "soni@123",
+      "gender": "male",
+      "id": 6
+    },
+    {
+      "fullname": "ashwini sawale",
+      "email": "sawale@ash.com",
+      "mobile": "4365353878",
+      "password": "sarika123",
+      "cpassword": "sarika123",
+      "uname": "soni@123",
+      "gender": "female",
+      "id": 7
+    },
+    {
+      "fullname": "ARCHANA sawale",
+      "email": "sarikarakshasmare123@.com",
+      "mobile": "9834526087",
+      "password": "sarika123",
+      "cpassword": "sarika123",
+      "uname": "soni@123",
+      "gender": "female",
+      "id": 8
+    },
+    {
+      "fullname": "Chetan Lalu Khandelote",
+      "email": "chetan@123",
+      "mobile": "9834556677",
+      "uname": "chetan@123",
+      "password": "12345",
+      "cpassword": "12345",
+      "gender": "male",
+      "id": 9
+    }
+  ],
+  "owners": [
+    {
+      "fullname": "Uttam Dadarao Rakshasmare",
+      "email": "monu@123.com",
+      "mobile": "9870225513",
+      "password": "12345",
+      "cpassword": "12345",
+      "uname": "soni@123",
+      "gender": "male",
+      "id": 1
+    }
+  ],
+  "admins": [
+    {
+      "fullname": "Ankita Ganpat Rakshasmare ",
+      "email": "ankita@123.com",
+      "mobile": "7798719782",
+      "password": "ankita@123",
+      "gender": "female",
+      "id": 1
+    }
+  ]
+}

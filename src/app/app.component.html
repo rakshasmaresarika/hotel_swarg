@@ -6,9 +6,9 @@
       </button>
       <span><h2>Swarg Residency</h2></span>
       <span class="example-spacer"></span>
-      <button mat-raised-button color="primary" routerLink="/admin">Admin</button>
-      <button mat-raised-button color="primary" routerLink="/owner">Owner</button>
-      <button mat-raised-button color="primary" routerLink="/user">User</button>
+      <button mat-raised-button color="primary" routerLink="/admin" (click)="onJourneySelected('admins')">Admin</button>
+      <button mat-raised-button color="primary" routerLink="/owner" (click)="onJourneySelected('owners')">Owner</button>
+      <button mat-raised-button color="primary" routerLink="/user" (click)="onJourneySelected('users')">User</button>
    </mat-toolbar>
     </p>
     
