@@ -5,6 +5,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class FomService {
+  hotelUrl: any ="http://localhost:3000/hotelList";
 
   constructor(private http:HttpClient) { }
   endPoint!:string;
@@ -29,6 +30,12 @@ export class FomService {
     return this.http.get(this.userUrl)    
   }
 
+  fetchHotelList(){
+    return this.http.get(this.hotelUrl)
+      
+      // subscribe(()=>{})
+    }
+  }
 
 
 
@@ -37,4 +44,5 @@ export class FomService {
 
 
 
-}
+
+

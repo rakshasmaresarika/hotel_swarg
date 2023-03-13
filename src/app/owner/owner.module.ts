@@ -3,15 +3,19 @@ import { CommonModule } from '@angular/common';
 
 import { OwnerRoutingModule } from './owner-routing.module';
 import { OwnerComponent } from './owner.component';
+import { FormsModule } from '@angular/forms';
+import { OwnerSuccessComponent } from './owner-success/owner-success.component';
 
 
 @NgModule({
   declarations: [
-    OwnerComponent
+    OwnerComponent,
+    OwnerSuccessComponent
   ],
   imports: [
     CommonModule,
-    OwnerRoutingModule
+    OwnerRoutingModule,
+    FormsModule
   ]
 })
 export class OwnerModule { }

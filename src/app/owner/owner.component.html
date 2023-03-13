@@ -1,16 +1,18 @@
+
+<div>
 <div class= " container mt-5 pt-5 " style="width: 450px;">
   <div class="text-center">
     <img src="../../assets/owner.png" alt="" height="80px" width="120px" >
   </div>
     <h2 class="text-center"> Owner Sign In </h2>
-      <form class="container">
+      <form class="container" #signinForm="ngForm" (ngSubmit)="onSubmit()">
           <div class="mb-3 ">
-            <input type="text" style="height: 50px;"  class="form-control" id="usename"  placeholder="Email address">
+            <input type="text" style="height: 50px;"  class="form-control" id="usename"  placeholder="username" name="uname" ngModel>
            
           </div>
           <div class="mb-3">
           
-            <input type="password" style="height: 50px;"  class="form-control" id="password" placeholder="Password">
+            <input type="password" style="height: 50px;"  class="form-control" id="password" placeholder="Password" name="password" ngModel>
           </div>
           
           <button type="submit" class="btn btn-primary w-100 mt-0" style="height: 50px;" >Submit</button>
@@ -20,5 +22,6 @@
       <span class="text-white" routerLink="signuo">Signup as user</span>
     </div>
   </div>
+</div>
   
 
