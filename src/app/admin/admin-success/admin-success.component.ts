@@ -16,6 +16,7 @@ export class AdminSuccessComponent {
     console.log(this.apiHotelList);
     
   })
+  
  }
 
 }

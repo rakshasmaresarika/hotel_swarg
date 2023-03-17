@@ -86,6 +86,46 @@
       "cpassword": "12345",
       "gender": "male",
       "id": 9
+    },
+    {
+      "fullname": "Kapil Bhimrao Ingle",
+      "email": "kapil000@gamil.com",
+      "mobile": "9834959267",
+      "uname": "kapuusir",
+      "password": "kapil123",
+      "cpassword": "kapil123",
+      "gender": "male",
+      "id": 10
+    },
+    {
+      "fullname": "Avinash Ishwar suryawanshi",
+      "email": "aavinash1995@gamil.com",
+      "mobile": "8390308967",
+      "uname": "avishwanshi",
+      "password": "avinash!@#",
+      "cpassword": "avinash123",
+      "gender": "male",
+      "id": 11
+    },
+    {
+      "fullname": "Vishal Ashok Sawale",
+      "email": "vishalbal@gmail.com",
+      "mobile": "8497464290",
+      "uname": "mcstan",
+      "password": "dbhay123",
+      "cpassword": "dbhay123",
+      "gender": "male",
+      "id": 12
+    },
+    {
+      "fullname": "Avinash Ashok Sawale",
+      "email": "avidonanna@gmail.com",
+      "mobile": "9087973909",
+      "uname": "annaavi",
+      "password": "assamnanded",
+      "cpassword": "assamnanded",
+      "gender": "male",
+      "id": 13
     }
   ],
   "owners": [
@@ -110,118 +150,150 @@
       "cpassword": "ankita@123",
       "gender": "female",
       "id": 1
+    },
+    {
+      "fullname": "panchshila waghmare",
+      "email": "waghmare@123",
+      "mobile": "6383838367",
+      "uname": "waghmare@123",
+      "password": "waghmare@123",
+      "cpassword": "waghmare@123",
+      "gender": "female",
+      "id": 2
     }
   ],
   "hotelList": [
     {
-      "hotelName" : "Marriott Resort and Spa",
-      "rating" : "4.5",
-      "price" : "17495",
-      "roomSiz" : "425 sq.ft",
-      "roomDis" : "1 Queen bed or 2 Twin Bed(s)",
-      "address" : "Panaji, Main street, Goa",
-      "availability" : "Yes",
-      "image" : "assets/luxury-hotel-lobby-lit-crystal-lighting-80695481.jpg",
-      "id" : 1
-      },
-      {
-      "hotelName" : "Majestic Beach Comforts-Beachfront",
-      "rating" : "4.4",
-      "price" : "3053",
-      "roomSiz" : "350 sq.ft",
-      "roomDis" : "1 Queen bed",
-      "address" : "Varca Beach, Goa",
-      "availability" : "Yes",
-      "image" : "assets/Hotel-Room-Secondary-Market-768x512.jpg",
-      "id" : 2
-      },
-      {
-      "hotelName" : "The Orchid Hotel Mumbai",
-      "rating" : "4.5",
-      "price" : "6499",
-      "roomSiz" : "225 sq.ft",
-      "roomDis" : "Twin Bed",
-      "address" : "Vile Parle, Mumbai",
-      "availability" : "Yes",
-      "image" : "assets/hotel-reception-bell-modern-luxury-counter-desk-40287792.jpg",
-      "id" : 3
-      },
-      {
-      "hotelName" : "Sofitel Mumbai BKC- Luxury Brand by Accor",
-      "rating" : "4.8",
-      "price" : "14000",
-      "roomSiz" : "325 sq.ft",
-      "roomDis" : "King Bed",
-      "address" : "Bandra Kurla Complex, Mumbai",
-      "availability" : "Yes",
-      "image" : "assets/hotel-lobby-new-luxury-42302700.jpg",
-      "id" : 4
-      },
-      {
-      "hotelName" : "ITC Grand Central - A Luxury Collection Hotel",
-      "rating" : "4.5",
-      "price" : "15500",
-      "roomSiz" : "312 sq.ft",
-      "roomDis" : "Queen Bed",
-      "address" : "South Mumbai",
-      "availability" : "Yes",
-      "image" : "assets/hotel-lobby-luxury-staircases-fountain-39479289 (1).jpg",
-      "id" : 5
-      },
-      {
-      "hotelName" : "Rah Bagh by The Orchard",
-      "rating" : "4.1",
-      "price" : "15040",
-      "roomSiz" : "316 sq.ft",
-      "roomDis" : "Twin Bed",
-      "address" : "Shreenagar",
-      "availability" : "Yes",
-      "image" : "assets/hotel-lobby-28312528.jpg",
-      "id" : 6
-      },
-      {
-      "hotelName" : "The Cheese Cottage Homestay",
-      "rating" : "4.8",
-      "price" : "22713",
-      "roomSiz" : "144 sq.ft",
-      "roomDis" : "2 x Queen Bed",
-      "address" : "Tangmarg, Shreenagar",
-      "availability" : "Yes",
-      "image" : "assets/hotel-ballroom-panorama-4375632.jpg",
-      "id" : 7
-      },
-      {
-      "hotelName" : "Gokulam Grand Hotel & Spa",
-      "rating" : "4.1",
-      "price" : "5293",
-      "roomSiz" : "425 sq.ft",
-      "roomDis" : "1 King bed or 2 Twin Bed(s)",
-      "address" : "Mathikere, Bengaluru",
-      "availability" : "Yes",
-      "image" : "assets\beach-hotel-resort-swimming-pool-11165387.jpg",
-      "id" : 8
-      },
-      {
-      "hotelName" : "The Oberoi",
-      "rating" : "4.7",
-      "price" : "24500",
-      "roomSiz" : "342 sq.ft",
-      "roomDis" : "Queen Bed",
-      "address" : "Ulsoor, Bengaluru",
-      "availability" : "Yes",
-      "image" : "assets/362619.jpg",
-      "id" : 9
-      },
-      {
-      "hotelName" : "Palm Meadows Resort",
-      "rating" : "4.2",
-      "price" : "18800",
-      "roomSiz" : "288 sq.ft",
-      "roomDis" : "King Bed",
-      "address" : "Whitefield, Bengaluru",
-      "availability" : "Yes",
-      "image" : "../../../assets/hotel-list-10.jpg",
-      "id" : 10
-      }
+      "hotelName": "Marriott Resort and sarika",
+      "rating": "4.5",
+      "price": "17495",
+      "roomSiz": "425 sq.ft",
+      "roomDis": "1 Queen bed or 2 Twin Bed(s)",
+      "address": "Panaji, Main street, Goa",
+      "availability": "Yes",
+      "image": "assets/luxury-hotel-lobby-lit-crystal-lighting-80695481.jpg",
+      "id": 1
+    },
+    {
+      "hotelName": "Majestic Beach Comforts-Beachfront",
+      "rating": "4.4",
+      "price": "3053",
+      "roomSiz": "350 sq.ft",
+      "roomDis": "1 Queen bed",
+      "address": "Varca Beach, Goa",
+      "availability": "Yes",
+      "image": "assets/Hotel-Room-Secondary-Market-768x512.jpg",
+      "id": 2
+    },
+    {
+      "hotelName": "The Orchid Hotel Mumbai",
+      "rating": "4.5",
+      "price": "6499",
+      "roomSiz": "225 sq.ft",
+      "roomDis": "Twin Bed",
+      "address": "Vile Parle, Mumbai",
+      "availability": "Yes",
+      "image": "assets/hotel-reception-bell-modern-luxury-counter-desk-40287792.jpg",
+      "id": 3
+    },
+    {
+      "hotelName": "Sofitel Mumbai BKC- Luxury Brand by Accor",
+      "rating": "4.8",
+      "price": "14000",
+      "roomSiz": "325 sq.ft",
+      "roomDis": "King Bed",
+      "address": "Bandra Kurla Complex, Mumbai",
+      "availability": "Yes",
+      "image": "assets/hotel-lobby-new-luxury-42302700.jpg",
+      "id": 4
+    },
+    {
+      "hotelName": "ITC Grand Central - A Luxury Collection Hotel",
+      "rating": "4.5",
+      "price": "15500",
+      "roomSiz": "312 sq.ft",
+      "roomDis": "Queen Bed",
+      "address": "South Mumbai",
+      "availability": "Yes",
+      "image": "assets/hotel-lobby-luxury-staircases-fountain-39479289 (1).jpg",
+      "id": 5
+    },
+    {
+      "hotelName": "Rah Bagh by The Orchard",
+      "rating": "4.1",
+      "price": "15040",
+      "roomSiz": "316 sq.ft",
+      "roomDis": "Twin Bed",
+      "address": "Shreenagar",
+      "availability": "Yes",
+      "image": "assets/hotel-lobby-28312528.jpg",
+      "id": 6
+    },
+    {
+      "hotelName": "The Cheese Cottage Homestay",
+      "rating": "4.8",
+      "price": "22713",
+      "roomSiz": "144 sq.ft",
+      "roomDis": "2 x Queen Bed",
+      "address": "Tangmarg, Shreenagar",
+      "availability": "Yes",
+      "image": "assets/hotel-ballroom-panorama-4375632.jpg",
+      "id": 7
+    },
+    {
+      "hotelName": "Gokulam Grand Hotel & Spa",
+      "rating": "4.1",
+      "price": "5293",
+      "roomSiz": "425 sq.ft",
+      "roomDis": "1 King bed or 2 Twin Bed(s)",
+      "address": "Mathikere, Bengaluru",
+      "availability": "Yes",
+      "image": "assets/istockphoto-1409928624-170667a.jpg",
+      "id": 8
+    },
+    {
+      "hotelName": "The Oberoi",
+      "rating": "4.7",
+      "price": "24500",
+      "roomSiz": "342 sq.ft",
+      "roomDis": "Queen Bed",
+      "address": "Ulsoor, Bengaluru",
+      "availability": "Yes",
+      "image": "assets/362619.jpg",
+      "id": 9
+    },
+    {
+      "hotelName": "Palm Meadows Resort",
+      "rating": "4.2",
+      "price": "18800",
+      "roomSiz": "288 sq.ft",
+      "roomDis": "King Bed",
+      "address": "Whitefield, Bengaluru",
+      "availability": "Yes",
+      "image": "assets/istockphoto-1409928624-170667a.jpg",
+      "id": 10
+    },
+    {
+      "hotelName": "king kapil  empire",
+      "rating": "7star",
+      "price": "90000",
+      "roomSiz": "king size",
+      "roomDis": "air conditionar ",
+      "address": "rahul colony",
+      "availability": "yess",
+      "image": "assets/photo-1551882547-ff40c63fe5fa.avif",
+      "id": 11
+    },
+    {
+      "hotelName": "jyoda hotel",
+      "rating": "7 star",
+      "price": "80000",
+      "roomSiz": "king size room",
+      "roomDis": "all facilited",
+      "address": "all over india",
+      "availability": "yes",
+      "image": "assets/photo-1584132967334-10e028bd69f7.avif",
+      "id": 12
+    }
   ]
 }

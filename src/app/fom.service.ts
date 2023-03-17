@@ -5,7 +5,20 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class FomService {
-  hotelUrl: any ="http://localhost:3000/hotelList";
+  editUrl!:string
+  edit=false;
+  deleteUrl!:string
+  delete=false;
+  
+
+  getHotel() {
+    return this.http.get(this.hotelUrl)
+  }
+  postNewHotel(newHotel:any){
+    return this.http.post(this.hotelUrl,newHotel)
+  }
+  hotelUrl: any ="http://localhost:3000/hotelList/";
+  editClicked: any;
 
   constructor(private http:HttpClient) { }
   endPoint!:string;
@@ -35,7 +48,40 @@ export class FomService {
       
       // subscribe(()=>{})
     }
-  }
+
+    editHotelId(id:number){
+   this.editUrl=`${this.hotelUrl}${id}`
+    console.log(this.editUrl);
+    this.edit=true;
+   } 
+   patchHotel(body:any){
+    console.log(this.editUrl);
+    
+    return this.http.patch(this.editUrl,body)
+
+   }
+   getHotelById(){
+     return this.http.get(this.editUrl)
+   }
+
+   deleteHotelId(id:number){
+    this.deleteUrl=`${this.hotelUrl}${id}`
+     console.log(this.deleteUrl);
+      return this.http.delete(this.deleteUrl)
+    } 
+   
+     getUserList(){
+     
+        return  this.http.get("http://localhost:3000/users");
+       }
+     
+     getOwnerList(){
+     
+      return  this.http.get("http://localhost:3000/owners");
+     }
+   }
+
+  
 
 
 

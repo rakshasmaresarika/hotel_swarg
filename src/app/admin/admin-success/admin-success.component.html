@@ -1,4 +1,12 @@
+
 <div class="container p-1">
+  <h1 >
+    <i class="bi bi-arrow-left-circle-fill" routerLink="/admin" > </i>
+    </h1>
+  <div class="mb-0">
+    <button mat-flat-button color="accent" class="me-5" routerLink="/admin/ownerlist" >Owner List</button>
+   <button mat-flat-button color="warn" routerLink="/admin/userlist" >User List</button>
+  </div>
   <div class="card mb-3" style="max-width: 150%; max-height: 300px;"  *ngFor="let hotel of hotelList">
       <div class="row g-0">
         <div class="col-md-4 p-1">
@@ -16,7 +24,7 @@
         <div class="col-md-2">
           <div class="mt-5">
               <h3>{{hotel.price | currency: 'INR':true:"1.0-2"}}</h3>
-              <h3><button class="btn btn-success" routerLink="/user/booking">Book Now</button></h3>
+              <h3><button class="btn btn-success" routerLink="/user/booking">Delete Now</button></h3>
           </div>
         </div>
       </div>

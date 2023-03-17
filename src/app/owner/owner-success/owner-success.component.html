@@ -1,4 +1,6 @@
 <div class="container p-1">
+  <!-- <button mat-raised-button color="accent" routerLink="/owner/new"  (click)="editFlag()">New Hotel Registration</button> -->
+  <button (click)="editFlag()" routerLink="/owner/new" mat-raised-button color="accent">New Hotel Registration</button>
   <div class="card mb-3" style="max-width: 150%; max-height: 300px;"  *ngFor="let hotel of hotelList">
       <div class="row g-0">
         <div class="col-md-4 p-1">
@@ -15,8 +17,9 @@
         </div>
         <div class="col-md-2">
           <div class="mt-5">
-              <h3>{{hotel.price | currency: 'INR':true:"1.0-2"}}</h3>
-              <h3><button class="btn btn-success" routerLink="/user/booking">Book Now</button></h3>
+              <h3>{{hotel.price | currency: 'INR':"symbol":"1.0-2"}}</h3>
+              <h3><button class="btn btn-success" routerLink="/owner/new"(click)="onEdit(hotel.id)">Edit Now</button></h3>
+              <h3><button class="btn btn-danger" routerLink="/owner/ownerSuccess"(click)="onDelete(hotel.id)">Delete Now</button></h3>
           </div>
         </div>
       </div>
