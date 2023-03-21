@@ -138,6 +138,16 @@
       "uname": "monu@123",
       "gender": "male",
       "id": 1
+    },
+    {
+      "fullname": "kuldeep bhimrao ingle",
+      "email": "kuldeep@gmail.com",
+      "mobile": "9876543567",
+      "uname": "kuldeep",
+      "password": "kuldeep1",
+      "cpassword": "kuldeep1",
+      "gender": "male",
+      "id": 2
     }
   ],
   "admins": [
@@ -294,6 +304,17 @@
       "availability": "yes",
       "image": "assets/photo-1584132967334-10e028bd69f7.avif",
       "id": 12
+    },
+    {
+      "hotelName": "kulddep hotel",
+      "rating": "5 star",
+      "price": "5000",
+      "roomSiz": "king size",
+      "roomDis": "air conditinar",
+      "address": "mumbai",
+      "availability": "yes",
+      "image": "assets/Hotel-Room-Secondary-Market-768x512.jpg",
+      "id": 13
     }
   ]
 }
