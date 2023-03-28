@@ -13,6 +13,9 @@ reactiveForm!:FormGroup;
 //  conformation notification 
 hide:boolean= true;
  hidenoti = true;
+  pass!: string;
+  cPass!: string;
+  notmatch:boolean=false;
 
 constructor(private formServ:FomService){}
 
@@ -46,6 +49,37 @@ onSubmit(){
     console.log(this.hidenoti);
     
    }
+   //password conformation match func
+   getPasswaord(event:any){
+    // console.log(event.target.value);
+    
+    this.pass = event.target.value
+    if( this.cPass ){    
+      if(this.pass === this.cPass){ 
+        console.log( "Password Match");
+        this.notmatch=false;
+      }
+      else{
+        console.log("Password Not Match");
+        this.notmatch=true;
+      }
+    }
+  }
+   getCpasswaord(event:any){
+    this.cPass= event.target.value;
+    if(this.pass){
+      if(this.pass === this.cPass){
+        console.log( "Password Match");
+        this.notmatch=false;
+      }
+      else{
+        console.log("Password Not Match");
+        this.notmatch=true;
+      }
+
+    }
+   }
+
 
 
 }

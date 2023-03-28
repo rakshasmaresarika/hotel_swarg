@@ -7,8 +7,11 @@
       <input type="text" id="email" formControlName="email" placeholder="Your Email Address.." >
       <input type="text" id="Mobile"  pattern="[0-9]{10}" formControlName="mobile" placeholder="Your Mobile No...">
       <input type="text" id="uname" formControlName="uname" placeholder="Create username.." >
-      <input type="password" class="ms-1 me-3 p-1" id="password" formControlName="password" placeholder="Create password..." >
-       <input type="password" class="p-1" id="password" formControlName="cpassword" placeholder="Confirm password..."> 
+      <input type="password" class="ms-1 me-3 p-1" id="password" formControlName="password"  (blur)="getPasswaord($event)" placeholder="Create password..." >
+
+       <input type="password" class="p-1" id="password" formControlName="cpassword" (blur)="getCpasswaord($event)" placeholder="Confirm password..."> <small *ngIf="notmatch ">
+         <span class="text-danger">Passwords must match</span>
+       </small>
       <div>
         <b><label for="gender">Gender : </label></b>
         <label class="ms-3 me-2" for="gender">Male</label>
