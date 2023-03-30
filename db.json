@@ -170,6 +170,26 @@
       "cpassword": "waghmare@123",
       "gender": "female",
       "id": 2
+    },
+    {
+      "fullname": "RITIKA DADARAO RAKSHASMARE",
+      "email": "ritika@gmail.com",
+      "mobile": "8947393578",
+      "uname": "ritika@123",
+      "password": "ritika@123",
+      "cpassword": "ritika@123",
+      "gender": "female",
+      "id": 3
+    },
+    {
+      "fullname": "RITIKA DADARAO RAKSHASMARE",
+      "email": "ritika@gmail.com",
+      "mobile": "9877389999",
+      "uname": "ritika@123",
+      "password": "ritika@123",
+      "cpassword": "ritika@123",
+      "gender": "female",
+      "id": 4
     }
   ],
   "hotelList": [
@@ -315,6 +335,17 @@
       "availability": "yes",
       "image": "assets/Hotel-Room-Secondary-Market-768x512.jpg",
       "id": 13
+    },
+    {
+      "hotelName": "doraemon hotel",
+      "rating": "5 star",
+      "price": "9000",
+      "roomSiz": "doracake",
+      "roomDis": "dora dora ",
+      "address": "disny land",
+      "availability": "yess",
+      "image": "C:\\fakepath\\Doraemon_character.png",
+      "id": 14
     }
   ]
 }

@@ -36,7 +36,7 @@ import {MatInputModule} from '@angular/material/input';
     ReactiveFormsModule,
     MatButtonModule,
     MatIconModule,
-    MatInputModule
+    MatInputModule,
   ]
 })
 export class UserModule { }

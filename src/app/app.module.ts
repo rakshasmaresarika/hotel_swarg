@@ -16,6 +16,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,9 @@ import { MatNativeDateModule } from '@angular/material/core';
     FormsModule,
     ReactiveFormsModule,
     // angular material
-    BrowserAnimationsModule,
+    // BrowserAnimationsModule,
+    BrowserAnimationsModule, // required animations module for tostar
+    ToastrModule.forRoot(), // ToastrModule added
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,

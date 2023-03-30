@@ -10,6 +10,8 @@ import { FomService } from 'src/app/fom.service';
 })
 export class OwnerSuccessComponent {
   hotelList:any;
+  apiHotelData: any;
+  _searchValue!: string;
 
   constructor(private apiHotelList: FomService,private router :Router){ }
 
@@ -38,4 +40,27 @@ export class OwnerSuccessComponent {
    }
 
   }
+  get searchValue(){
+    return this._searchValue
+   }
+
+   set searchValue(value:string ){
+     this._searchValue=value.toLowerCase()
+     this.hotelList=this.searchHotels()
+     
+   }
+
+    searchHotels(){
+      this.hotelList=this.apiHotelData
+      if(this.searchValue===""){
+       return this.hotelList
+
+      }
+      else{
+       return this.hotelList.filter((hotel:any)=>{
+        return   JSON.stringify(hotel).toLowerCase().includes(this.searchValue)
+        })
+      }
+    }
+
 }

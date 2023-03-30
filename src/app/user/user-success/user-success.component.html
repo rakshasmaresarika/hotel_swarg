@@ -1,12 +1,12 @@
 <div class="container p-1">
   <div class="row">
-    <div class="col-1"><i class="bi bi-arrow-left-circle-fill fs-2" routerLink="/user"></i></div>
+    <div class="col-1"><i class="bi bi-arrow-left-circle-fill fs-2 text-warning" routerLink="/user"></i></div>
     <div class="col-10 d-flex justify-content-center"><input class="form-control me-2 mb-3 w-25" type="text" placeholder="Search" aria-label="Search"  [(ngModel)]="searchUserHotelList" ></div>
     <div class="col-1"></div>
   </div>
   <div class="card mb-3" style="max-width: 150%; max-height: 300px;"  *ngFor="let hotel of hotelList">
       <div class="row g-0">
-        <div class="col-md-4 p-1">
+        <div class="col-md-4 p-1"> 
           <img src={{hotel.image}} width="335px" class="img-fluid rounded-start" alt="hotel">
         </div>
         <div class="col-md-6 mt-2">

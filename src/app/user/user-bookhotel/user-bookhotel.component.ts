@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { FormGroup, FormBuilder, Validators, FormControl } from '@angular/forms';
+import { Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-user-bookhotel',
@@ -11,7 +13,7 @@ export class UserBookhotelComponent {
   email = new FormControl('', [Validators.required, Validators.email]);
   bookingForm!: FormGroup;
 
-  constructor(private formbuild: FormBuilder){ }
+  constructor(private formbuild: FormBuilder,private toastr: ToastrService, private router: Router){ }
 
   ngOnInit(){
     this.settingBookingForm();
@@ -22,29 +24,34 @@ export class UserBookhotelComponent {
 
   settingBookingForm(){
     this.bookingForm = this.formbuild.group({
-      fname: [""],
-      lname: [""],
-      email: [""],
-      mobile: [""],
-      arrivalDate: [""],
-      departureDate: [""],
-      guests: [],
-      address: [""],
-      city: [""],
-      state: [""],
-      pin: [""],
+      fname: ["",Validators.required],
+      lname: ["",Validators.required],
+      email: ["",Validators.required],
+      mobile: ["",Validators.required],
+      arrivalDate: ["",Validators.required],
+      departureDate: ["",Validators.required],
+      guests: [1,Validators.required],
+      address: ["",Validators.required],
+      city: ["",Validators.required],
+      state: ["",Validators.required],
+      pin: ["",Validators.required],
       paymentMethod: ["upi"]
     })
   }
 
   onSubmit(){
     console.log(this.bookingForm.value);
-    alert('SUCCESS!! :-)\n\n' + JSON.stringify(this.bookingForm.value, null, 4));
+    // alert('SUCCESS!! :-)\n\n' + JSON.stringify(this.bookingForm.value, null, 4));
+    console.log
+    ('SUCCESS!! :-)\n\n' + JSON.stringify(this.bookingForm.value, null, 4));
+    this.toastr.success('Hotel Book successfully')
+    // this.bookingForm.reset();
+    this.router.navigateByUrl('/user/userSuccess')
    }
 
   getErrorMessage() {
     if (this.email.hasError('required')) {
-      return 'You must enter a value';
+      return 'You must enter a valid email';
     }
 
     return this.email.hasError('email') ? 'Not a valid email' : '';

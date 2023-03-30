@@ -23,6 +23,7 @@ export class AdminSuccessComponent {
   })
   
  }
+ //search filter by using get and set method..
    get searchValue(){
     return this._searchValue
    }

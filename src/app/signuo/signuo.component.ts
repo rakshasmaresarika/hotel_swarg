@@ -1,5 +1,6 @@
 import { Component, OnInit,  } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { FomService } from '../fom.service';
 
 @Component({
@@ -17,7 +18,7 @@ hide:boolean= true;
   cPass!: string;
   notmatch:boolean=false;
 
-constructor(private formServ:FomService){}
+constructor(private formServ:FomService,private router:Router){}
 
 ngOnInit(){
   this.reactiveForm = new FormGroup({
@@ -47,6 +48,7 @@ onSubmit(){
    notificationoff(){
     this.hidenoti= false;
     console.log(this.hidenoti);
+    this.router.navigateByUrl('/user/userSuccess')
     
    }
    //password conformation match func

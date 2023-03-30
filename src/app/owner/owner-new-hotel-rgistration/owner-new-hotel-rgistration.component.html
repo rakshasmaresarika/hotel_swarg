@@ -24,7 +24,7 @@
         <input type="text" class="form-control" id="availability" placeholder="Availability" formControlName="availability">
       </div>
       <div class="mb-2">
-        <input type="text" class="form-control" id="image" placeholder="Image" formControlName="image">
+        <input type="file" class="form-control" id="image" placeholder="Image" formControlName="image">
       </div>
        <div *ngIf="edit">
         <button type="submit" class="btn btn-success w-100" (click)="editHotelInfo()">Save Changes</button>

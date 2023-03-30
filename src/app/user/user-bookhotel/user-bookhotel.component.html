@@ -1,6 +1,10 @@
-<div class="rounded ms-3" style="background-color: rgb(184, 233, 239); width:1330px">
-    <div class="row">
-        <div class="col-7 ps-4 border-end">
+
+<h2>
+    <i class="bi bi-arrow-left-circle-fill text-warning" routerLink="/user/userSuccess" > </i>
+   </h2>
+<div class="rounded ms-3" style="background-color: rgb(184, 233, 239);width: fit-content; "> 
+    <div class="container">
+        <div class=" ps-4 ">
             <div class="text-center p-2">
                 <h3>Booking Form</h3>
             </div>
@@ -8,15 +12,15 @@
                 <div class="mb-0">
                     <mat-form-field appearance="fill" class="me-4">
                         <mat-label>First Name</mat-label>
-                        <input matInput formControlName="fname" required>
+                        <input matInput formControlName="fname">
                     </mat-form-field>
                     <mat-form-field appearance="fill" class="me-4">
                         <mat-label>Last Name</mat-label>
-                        <input matInput formControlName="lname" required>
+                        <input matInput formControlName="lname">
                     </mat-form-field>
                     <mat-form-field appearance="fill">
                         <mat-label>Enter your email</mat-label>
-                        <input matInput placeholder="abc@example.com" formControlName="email" required>
+                        <input matInput placeholder="abc@example.com" formControlName="email">
                         <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
                     </mat-form-field>
                 </div>
@@ -79,11 +83,12 @@
                     </span>
                 </div>
                 <div class="text-center p-2">
-                    <button type="submit" class="btn btn-primary w-25">Submit</button>
+                    <button type="submit" class="btn btn-primary w-25" [disabled]="bookingForm.invalid" 
+                    >Submit</button>
                 </div>
             </form>
         </div>
-        <div class="col-4 p-2 ps-5">
+        <!-- <div class="col-4 p-2 ps-5">
             <h4 class="ms-5 ps-5">Selected Hotel</h4>
             <div class="card mb-3" style="width:440px;">
                 <img src="../../../assets/photo-1584132967334-10e028bd69f7.avif" class="card-img-top" alt="...">
@@ -93,7 +98,9 @@
                   <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                 </div>
               </div>
-        </div>
+        </div> -->
+
+
     </div>
 </div>
 
