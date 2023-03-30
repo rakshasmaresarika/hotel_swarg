@@ -346,6 +346,17 @@
       "availability": "yess",
       "image": "C:\\fakepath\\Doraemon_character.png",
       "id": 14
+    },
+    {
+      "hotelName": "sarika",
+      "rating": "7",
+      "price": "998",
+      "roomSiz": "hsjj",
+      "roomDis": "nn",
+      "address": "jjj",
+      "availability": "ye",
+      "image": "C:\\fakepath\\Doraemon_character.png",
+      "id": 15
     }
   ]
 }
