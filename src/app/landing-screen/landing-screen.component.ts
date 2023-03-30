@@ -9,5 +9,9 @@ import { Component } from '@angular/core';
 })
 export class LandingScreenComponent {
  
+  onClick(){
+    confirm("you have to sign-in first")
+    
+  }
 }
 
