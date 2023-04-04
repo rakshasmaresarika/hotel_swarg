@@ -12,7 +12,7 @@ export class AdminOwnerlistComponent {
  ownersList:any;
 
   constructor(private fomsevice:FomService){}
-
+//GET OWNER LIST
   ngOnInit(){
     this.fomsevice.getOwnerList().subscribe((ownerlist)=>{
       this.ownersList=ownerlist
